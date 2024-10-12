@@ -23,7 +23,8 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                        'btn-primary': '#FFC107'
+                        'btn-primary': '#FFC107',
+                        'text-primary': '#100F0F'
                     }
                 }
             }
@@ -39,16 +40,30 @@
 <body class="font-poppins">
     <header>
         <!-- navbar section -->
-        <nav class="container mx-auto my-4 md:my-7 lg:my-[30px] bg-red-400">
-            <div class="flex justify-between items-center">
+        <nav class="container mx-auto my-4 md:my-7 lg:my-[30px] ">
+            <div class="flex justify-between items-center px-3 md:px-0">
                 <div class=""><img class="w-full h-full" src="./images/Tasty_HUT.png" alt=""></div>
-                <button class="btn btn-sm md:btn-md lg:btn-lg bg-btn-primary border-none">Sign Up</button>
+                <button class="btn text-text-primary btn-md md:btn-lg bg-btn-primary border-none font-extrabold">Sign Up</button>
             </div>
         </nav>
     </header>
     <main>
         <!-- banner starts -->
-        
+        <section class="h-[450px] md:h-[650px] flex justify-center items-center"
+            style="background-image: url(./images/banner_1.png); background-repeat: no-repeat; background-size: cover; ">
+            <div style="background: rgba(16, 15, 15, 0.7);"
+                class="h-full w-full flex flex-col items-center justify-center text-center">
+                <div class=" md:w-[786px] px-4">
+                    <h1 class="text-white text-4xl md:text-6xl font-bold mb-4 md:mb-6">Taste Our Delicious <br>Best Foods</h1>
+                    <p class="text-sm md:text-lg text-white font-normal text-center mb-6 md:mb-8 ">Discover our delicious collection of the best meals. Each dish is made to satisfy your taste buds perfectly. Enjoy flavors that make every meal memorable!</p>
+                    <form class="w-full relative " action="">
+                        <input class="w-full rounded-lg py-3 md:py-5 pl-8 md:pl-9" type="text" placeholder="Search any food">
+                        <i class="fa-solid fa-magnifying-glass absolute top-4 md:top-6 left-2 md:left-3 text-gray-400"></i>
+                        <button class="btn text-text-primary btn-md md:btn-lg bg-btn-primary border-none absolute top-0 right-0 font-extrabold">Search</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
