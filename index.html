@@ -49,7 +49,7 @@
         <nav class="container mx-auto my-2 md:my-3 ">
             <div class="flex justify-between items-center px-3 md:px-0">
                 <h1 class="text-[#403F3F] text-[25px] font-bold">Tasty HUT</h1>
-                <button class="btn text-text-primary btn-md md:btn-lg bg-btn-primary border-none font-extrabold">Sign
+                <button class="btn text-text-primary btn-md md:btn-lg bg-btn-primary border-none font-bold md:font-extrabold">Sign
                     Up</button>
             </div>
         </nav>
@@ -70,7 +70,7 @@
                         <input class="w-full rounded-lg py-3 md:py-5 pl-10" type="text" placeholder="Search any food">
                         <i class="fa-solid fa-magnifying-glass absolute top-4 md:top-6 left-3 text-gray-400"></i>
                         <button
-                            class="btn text-text-primary btn-md md:btn-lg bg-btn-primary border-none absolute top-0 right-0 font-extrabold">Search</button>
+                            class="btn text-text-primary btn-md md:btn-lg bg-btn-primary border-none absolute top-0 right-0 font-bold md:font-extrabold">Search</button>
                     </div>
                 </div>
             </div>
@@ -79,12 +79,15 @@
         <section class="container mx-auto">
             <div class="mb-14 flex flex-col items-center gap-5">
                 <h1 class="text-text-primary text-4xl font-bold text-center ">YOUR FAVOURITE FOOD</h1>
-                <button
-                    class="btn text-text-primary btn-md md:btn-lg bg-btn-primary border-none font-extrabold">See All Categories
+                <button id="btn-see-category" onclick="loadAllCategory()"
+                    class="btn text-text-primary btn-md md:btn-lg bg-btn-primary border-none font-bold md:font-extrabold">See All Categories
                 </button>
             </div>
             <div id="category-container" class="grid grid-cols-1 gap-6 lg:grid-cols-2 justify-between px-4 md:px-0">
                 <!-- show food categories dynamically -->
+            </div>
+            <div id="category-foods-container" class="grid md:grid-cols-2 gap-5 lg:grid-cols-4 px-4 md:px-0">
+                <!-- show food items dynamically -->
             </div>
         </section>
     </main>
