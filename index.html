@@ -46,9 +46,9 @@
 <body class="font-poppins">
     <header>
         <!-- navbar section -->
-        <nav class="container mx-auto my-4 md:my-7 lg:my-[30px] ">
+        <nav class="container mx-auto my-2 md:my-3 ">
             <div class="flex justify-between items-center px-3 md:px-0">
-                <h1 class="text-[#403F3F] text-[25px] font-bold">Tasty Hut</h1>
+                <h1 class="text-[#403F3F] text-[25px] font-bold">Tasty HUT</h1>
                 <button class="btn text-text-primary btn-md md:btn-lg bg-btn-primary border-none font-extrabold">Sign
                     Up</button>
             </div>
@@ -56,38 +56,35 @@
     </header>
     <main>
         <!-- banner starts -->
-        <section class="mb-12 md:mb-20 lg:mb-32 h-[450px] md:h-[650px] flex justify-center items-center"
+        <section class="mb-12 md:mb-20 lg:mb-32 h-[560px] md:h-[650px] flex justify-center items-center"
             style="background-image: url(./images/banner_1.png); background-repeat: no-repeat; background-size: cover; ">
             <div style="background: rgba(16, 15, 15, 0.7);"
                 class="h-full w-full flex flex-col items-center justify-center text-center">
-                <div class=" md:w-[786px] px-4">
-                    <h1 class="text-white text-4xl md:text-6xl font-bold mb-4 md:mb-6">Taste Our Delicious <br>Best
+                <div class="md:w-[786px] px-4 " >
+                    <h1 class="text-white text-opacity-80 text-5xl  md:text-6xl font-bold mb-6">Taste Our Delicious <br class="hidden sm:block">Best
                         Foods</h1>
-                    <p class="text-sm md:text-lg text-white font-normal text-center mb-8 md:mb-10 ">Discover our
+                    <p class="text-base md:text-lg text-white text-opacity-80 font-normal text-center mb-10 ">Discover our
                         delicious collection of the best meals. Each dish is made to satisfy your taste buds perfectly.
                         Enjoy flavors that make every meal memorable!</p>
-                    <form class="w-full relative " action="">
-                        <input class="w-full rounded-lg py-3 md:py-5 pl-9" type="text" placeholder="Search any food">
+                    <div class="w-10/12 sm:w-11/12 mx-auto relative " action="">
+                        <input class="w-full rounded-lg py-3 md:py-5 pl-10" type="text" placeholder="Search any food">
                         <i class="fa-solid fa-magnifying-glass absolute top-4 md:top-6 left-3 text-gray-400"></i>
                         <button
                             class="btn text-text-primary btn-md md:btn-lg bg-btn-primary border-none absolute top-0 right-0 font-extrabold">Search</button>
-                    </form>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- food section -->
         <section class="container mx-auto">
-            <h1 class="text-text-primary text-2xl md:text-4xl font-semibold text-center mb-14">Your Favourite Food</h1>
+            <div class="mb-14 flex flex-col items-center gap-5">
+                <h1 class="text-text-primary text-4xl font-bold text-center ">YOUR FAVOURITE FOOD</h1>
+                <button
+                    class="btn text-text-primary btn-md md:btn-lg bg-btn-primary border-none font-extrabold">See All Categories
+                </button>
+            </div>
             <div id="category-container" class="grid grid-cols-1 gap-6 lg:grid-cols-2 justify-between px-4 md:px-0">
-                <!-- category-1 -->
-                <!-- <div id="category-" class="h-auto flex items-center gap-5 border-[1px] border-text-primary border-opacity-10 rounded-lg p-4">
-                    <div class="w-1/2 h-full  flex justify-center items-center"><img class="w-full h-full object-cover" src="https://www.themealdb.com/images/category/lamb.png" alt=""></div>
-                    <div class="w-1/2">
-                        <h1 class="text-text-secondary text-xl sm:text-2xl font-bold mb-2">Chicken Handi</h1>
-                        <p class="text-text-tertiary text-sm sm:text-lg mb-3">There are many variations of passages of available, but the majority have suffered There are many variations of passages of available, but the majority have suffered</p>
-                        <a class="underline text-btn-primary text-sm lg:text-lg font-semibold" href="">View details</a>
-                    </div>
-                </div> -->
+                <!-- show food categories dynamically -->
             </div>
         </section>
     </main>
