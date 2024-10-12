@@ -24,7 +24,9 @@
                     colors: {
                         clifford: '#da373d',
                         'btn-primary': '#FFC107',
-                        'text-primary': '#100F0F'
+                        'text-primary': '#100F0F',
+                        'text-secondary': '#403F3F',
+                        'text-tertiary': '#706F6F'
                     }
                 }
             }
@@ -34,6 +36,10 @@
         .font-poppins {
             font-family: "Poppins", sans-serif;
         }
+
+        div::-webkit-scrollbar {
+            display: none;
+        }
     </style>
 </head>
 
@@ -42,32 +48,53 @@
         <!-- navbar section -->
         <nav class="container mx-auto my-4 md:my-7 lg:my-[30px] ">
             <div class="flex justify-between items-center px-3 md:px-0">
-                <div class=""><img class="w-full h-full" src="./images/Tasty_HUT.png" alt=""></div>
-                <button class="btn text-text-primary btn-md md:btn-lg bg-btn-primary border-none font-extrabold">Sign Up</button>
+                <h1 class="text-[#403F3F] text-[25px] font-bold">Tasty Hut</h1>
+                <button class="btn text-text-primary btn-md md:btn-lg bg-btn-primary border-none font-extrabold">Sign
+                    Up</button>
             </div>
         </nav>
     </header>
     <main>
         <!-- banner starts -->
-        <section class="h-[450px] md:h-[650px] flex justify-center items-center"
+        <section class="mb-12 md:mb-20 lg:mb-32 h-[450px] md:h-[650px] flex justify-center items-center"
             style="background-image: url(./images/banner_1.png); background-repeat: no-repeat; background-size: cover; ">
             <div style="background: rgba(16, 15, 15, 0.7);"
                 class="h-full w-full flex flex-col items-center justify-center text-center">
                 <div class=" md:w-[786px] px-4">
-                    <h1 class="text-white text-4xl md:text-6xl font-bold mb-4 md:mb-6">Taste Our Delicious <br>Best Foods</h1>
-                    <p class="text-sm md:text-lg text-white font-normal text-center mb-6 md:mb-8 ">Discover our delicious collection of the best meals. Each dish is made to satisfy your taste buds perfectly. Enjoy flavors that make every meal memorable!</p>
+                    <h1 class="text-white text-4xl md:text-6xl font-bold mb-4 md:mb-6">Taste Our Delicious <br>Best
+                        Foods</h1>
+                    <p class="text-sm md:text-lg text-white font-normal text-center mb-8 md:mb-10 ">Discover our
+                        delicious collection of the best meals. Each dish is made to satisfy your taste buds perfectly.
+                        Enjoy flavors that make every meal memorable!</p>
                     <form class="w-full relative " action="">
-                        <input class="w-full rounded-lg py-3 md:py-5 pl-8 md:pl-9" type="text" placeholder="Search any food">
-                        <i class="fa-solid fa-magnifying-glass absolute top-4 md:top-6 left-2 md:left-3 text-gray-400"></i>
-                        <button class="btn text-text-primary btn-md md:btn-lg bg-btn-primary border-none absolute top-0 right-0 font-extrabold">Search</button>
+                        <input class="w-full rounded-lg py-3 md:py-5 pl-9" type="text" placeholder="Search any food">
+                        <i class="fa-solid fa-magnifying-glass absolute top-4 md:top-6 left-3 text-gray-400"></i>
+                        <button
+                            class="btn text-text-primary btn-md md:btn-lg bg-btn-primary border-none absolute top-0 right-0 font-extrabold">Search</button>
                     </form>
                 </div>
+            </div>
+        </section>
+        <!-- food section -->
+        <section class="container mx-auto">
+            <h1 class="text-text-primary text-2xl md:text-4xl font-semibold text-center mb-14">Your Favourite Food</h1>
+            <div id="category-container" class="grid grid-cols-1 gap-6 lg:grid-cols-2 justify-between px-4 md:px-0">
+                <!-- category-1 -->
+                <!-- <div id="category-" class="h-auto flex items-center gap-5 border-[1px] border-text-primary border-opacity-10 rounded-lg p-4">
+                    <div class="w-1/2 h-full  flex justify-center items-center"><img class="w-full h-full object-cover" src="https://www.themealdb.com/images/category/lamb.png" alt=""></div>
+                    <div class="w-1/2">
+                        <h1 class="text-text-secondary text-xl sm:text-2xl font-bold mb-2">Chicken Handi</h1>
+                        <p class="text-text-tertiary text-sm sm:text-lg mb-3">There are many variations of passages of available, but the majority have suffered There are many variations of passages of available, but the majority have suffered</p>
+                        <a class="underline text-btn-primary text-sm lg:text-lg font-semibold" href="">View details</a>
+                    </div>
+                </div> -->
             </div>
         </section>
     </main>
     <footer>
 
     </footer>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
